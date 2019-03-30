@@ -2,12 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -23,11 +17,59 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search-wrapper {
+  position: relative;
+  width: 500px;
+  padding: 40px 0 0 40px;
+}
+.search-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background: blue;
+  width: 100%;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.search-wrapper input {
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  box-sizing: border-box;
+  font-size: 18px;
+  padding: 10px 8px;
+  width: 540px;
+}
+input[type="checkbox"] {
+  width:20px;
+}
+.searchLabel {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #777;
+}
+.flagSection, .searchInput {
+  width: 50%;
+  display: inline-block;
+}
+.flagLabel {
+  position: fixed;
+  top: 110px;
+  font-size: 18px;
+  color: #777;
+}
+
+.flagValue {
+  position: fixed;
+  top: 140px;
+}
+li {
+  padding: 10px;
+}
+
+li.active {
+  background: #777;
 }
